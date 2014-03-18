@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <context id="context1" >
+  
+	<commentGenerator>
+	<!-- 去除自动生成的注释 -->
+		<property name="suppressAllComments" value="true" />
+	</commentGenerator>
+	
+    <jdbcConnection 
+    	driverClass="com.mysql.jdbc.Driver" 
+    	connectionURL="jdbc:mysql://127.0.0.1:3306/exam"
+    	userId="root" 
+    	password="63300806" />
+    <javaModelGenerator targetPackage="com.wdxxl.exam.mybatis.model" targetProject="SpringMyBatis" />
+    <sqlMapGenerator targetPackage="com.wdxxl.exam.mybatis.map" targetProject="SpringMyBatis" />
+    <javaClientGenerator targetPackage="com.wdxxl.exam.mybatis.client" targetProject="SpringMyBatis" type="XMLMAPPER" />
+    <table schema="???" tableName="sample" >
+      <!-- <columnOverride column="???" property="???" /> -->
+    </table>
+  </context>
+</generatorConfiguration>
