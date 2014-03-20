@@ -4,7 +4,7 @@
   <context id="context1" >
   
 	<commentGenerator>
-	<!-- 去除自动生成的注释 -->
+		<!--remove auto generated comments-->
 		<property name="suppressAllComments" value="true" />
 	</commentGenerator>
 	
@@ -13,11 +13,14 @@
     	connectionURL="jdbc:mysql://127.0.0.1:3306/exam"
     	userId="root" 
     	password="63300806" />
-    <javaModelGenerator targetPackage="com.wdxxl.exam.mybatis.model" targetProject="SpringMyBatis" />
-    <sqlMapGenerator targetPackage="com.wdxxl.exam.mybatis.map" targetProject="SpringMyBatis" />
-    <javaClientGenerator targetPackage="com.wdxxl.exam.mybatis.client" targetProject="SpringMyBatis" type="XMLMAPPER" />
-    <table schema="???" tableName="sample" >
-      <!-- <columnOverride column="???" property="???" /> -->
+    	
+    <javaModelGenerator targetPackage="com.model" targetProject="SpringMyBatis">
+    </javaModelGenerator>
+    <sqlMapGenerator targetPackage="com.map" targetProject="SpringMyBatis" >
+    </sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.client" targetProject="SpringMyBatis" type="XMLMAPPER" >
+    </javaClientGenerator>
+    <table tableName="sample" domainObjectName="T_Sample">
     </table>
   </context>
 </generatorConfiguration>

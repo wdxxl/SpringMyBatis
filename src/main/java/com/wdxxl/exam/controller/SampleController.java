@@ -1,5 +1,7 @@
 package com.wdxxl.exam.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +21,9 @@ public class SampleController {
 		Integer sampleId = 1;
 		Sample sample = sampleService.doSomeBusinessStuff(sampleId);
 		System.out.println("JSON.toJSONString:"+JSON.toJSONString(sample.getName()));
+		List<Sample> samples = sampleService.doSomeListStuff();
+		System.out.println("sample List Size:"+samples.size());
+		
 		ModelAndView modelAndView = new ModelAndView("sample");
 		return modelAndView;
 	}
