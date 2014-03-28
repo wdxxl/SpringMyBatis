@@ -161,4 +161,9 @@
     set name = #{name,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  
+  <select id="selectDistinctName" parameterType="int" resultType="java.lang.String">
+		select distinct name from sample where id = #{id,jdbcType=INTEGER}
+  </select>
+  
 </mapper>

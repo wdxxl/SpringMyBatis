@@ -8,28 +8,18 @@ import com.wdxxl.exam.model.Sample;
 import com.wdxxl.exam.model.SampleExample;
 
 public interface SampleMapper {
-
 	int countByExample(SampleExample example);
-
 	int deleteByExample(SampleExample example);
-
 	int deleteByPrimaryKey(Integer id);
-
 	int insert(Sample record);
-
 	int insertSelective(Sample record);
-
 	List<Sample> selectByExample(SampleExample example);
-
 	Sample selectByPrimaryKey(Integer id);
-
-	int updateByExampleSelective(@Param("record") Sample record,
-			@Param("example") SampleExample example);
-
-	int updateByExample(@Param("record") Sample record,
-			@Param("example") SampleExample example);
-
+	int updateByExampleSelective(@Param("record") Sample record, @Param("example") SampleExample example);
+	int updateByExample(@Param("record") Sample record, @Param("example") SampleExample example);
 	int updateByPrimaryKeySelective(Sample record);
-
 	int updateByPrimaryKey(Sample record);
+	
+	//================ Personal Method =============
+	List<String> selectDistinctName(int id);
 }

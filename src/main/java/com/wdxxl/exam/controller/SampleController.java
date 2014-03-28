@@ -22,6 +22,7 @@ public class SampleController {
 		Sample sample = sampleService.doSomeBusinessStuff(sampleId);
 		System.out.println("JSON.toJSONString:"+JSON.toJSONString(sample.getName()));
 		List<Sample> samples = sampleService.doSomeListStuff();
+		sampleService.selectDistinctName();
 		System.out.println("sample List Size:"+samples.size());
 		
 		ModelAndView modelAndView = new ModelAndView("sample");

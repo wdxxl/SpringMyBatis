@@ -7,4 +7,5 @@ import com.wdxxl.exam.model.Sample;
 public interface SampleService {
 	 Sample doSomeBusinessStuff(Integer sampleId);
 	 List<Sample> doSomeListStuff();
+	 void selectDistinctName();
 }

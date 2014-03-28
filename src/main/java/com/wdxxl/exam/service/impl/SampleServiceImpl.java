@@ -24,4 +24,10 @@ public class SampleServiceImpl implements SampleService {
          example.createCriteria().andIdIsNotNull(); 
          return sampleMapper.selectByExample(example);
 	}
+
+	public void selectDistinctName() {
+		List<String> names = sampleMapper.selectDistinctName(1);
+		System.out.println("distinct size: "+ names.size());
+		
+	}
 }
