@@ -21,7 +21,7 @@ public class SampleServiceImpl implements SampleService {
 	
 	public List<Sample> doSomeListStuff(){
 		 SampleExample example = new SampleExample();  
-         example.createCriteria().andIdIsNotNull(); 
+         example.createCriteria().andIdIsNotNull();
          return sampleMapper.selectByExample(example);
 	}
 

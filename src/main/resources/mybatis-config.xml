@@ -4,5 +4,6 @@
 <configuration>
     <mappers>
         <mapper resource="mybatis/SampleMapper.xml"/>
+        <mapper resource="mybatis/PersonMapper.xml"/>
     </mappers>
 </configuration>
