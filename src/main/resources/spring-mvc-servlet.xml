@@ -30,4 +30,6 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<mvc:annotation-driven />
+
 </beans:beans>
