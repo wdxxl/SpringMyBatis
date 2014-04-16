@@ -53,11 +53,24 @@
 		<artifactId>fastjson</artifactId>
 		<version>1.1.39</version>
 	</dependency>
-	<!-- jackson (mapper-asl/core-asl) -->
+	<!-- jackson (mapper-asl/core-asl) for ajax call return json-->
 	<dependency>
 		<groupId>org.codehaus.jackson</groupId>
 		<artifactId>jackson-mapper-asl</artifactId>
 		<version>1.7.1</version>
+	</dependency>
+	<!-- SpringUnitTest (test) -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-test</artifactId>
+		<version>${springframework-version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>servlet-api</artifactId>
+		<version>2.5</version>
+		<scope>test</scope>
 	</dependency>
 
   </dependencies>
