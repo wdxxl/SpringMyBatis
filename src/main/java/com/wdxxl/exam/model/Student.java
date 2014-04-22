@@ -1,16 +1,14 @@
 package com.wdxxl.exam.model;
 
-import java.util.List;
-
-public class Person {
+public class Student {
     private Integer id;
 
     private String name;
 
     private Integer age;
-    
-    private List<Sample> sampleList;
-    
+
+    private String address;
+
     public Integer getId() {
         return id;
     }
@@ -35,11 +33,11 @@ public class Person {
         this.age = age;
     }
 
-	public List<Sample> getSampleList() {
-		return sampleList;
-	}
+    public String getAddress() {
+        return address;
+    }
 
-	public void setSampleList(List<Sample> sampleList) {
-		this.sampleList = sampleList;
-	}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

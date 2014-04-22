@@ -3,7 +3,10 @@
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <mappers>
-        <mapper resource="mybatis/SampleMapper.xml"/>
-        <mapper resource="mybatis/PersonMapper.xml"/>
+     	<mapper resource="mybatis/AuthorityResourceMapper.xml"/>
+        <mapper resource="mybatis/AuthorityRoleMapper.xml"/>
+        <mapper resource="mybatis/AuthorityUserMapper.xml"/>
+        <mapper resource="mybatis/TeacherMapper.xml"/>
+        <mapper resource="mybatis/StudentMapper.xml"/>
     </mappers>
 </configuration>

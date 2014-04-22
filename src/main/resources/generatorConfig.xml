@@ -18,10 +18,12 @@
     <sqlMapGenerator targetPackage="com.wdxxl.xml" targetProject="SpringMyBatis" />
     <javaClientGenerator targetPackage="com.wdxxl.exam.mapper" targetProject="SpringMyBatis" type="XMLMAPPER"/>
     
-    	
-  <table tableName="person" domainObjectName="Person"> </table>
-    
-    	
+  <table tableName="authority_user" domainObjectName="AuthorityUser"> </table>
+  <!-- 
+  <table tableName="authority_role" domainObjectName="AuthorityRole"> </table>
+  <table tableName="authority_resource" domainObjectName="AuthorityResource"> </table>
+  -->  	
+  
   <!--
    <jdbcConnection driverClass="com.mysql.jdbc.Driver"  
           connectionURL="jdbc:mysql://192.168.1.2:3306/weimigo"  
