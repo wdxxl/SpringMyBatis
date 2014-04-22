@@ -16,10 +16,12 @@ import org.apache.http.util.EntityUtils;
 //http://ak23173969.iteye.com/blog/1954011
 //Login
 //GetAllGroupAndMember
+@SuppressWarnings("deprecation")
 public class HttpClient4WeChatUtils {
-	private static final String USER_AGENT = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:26.0) Gecko/20100101 Firefox/26.0";
+	//private static final String USER_AGENT = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:26.0) Gecko/20100101 Firefox/26.0";
 	private static final String WEIXIN_LOGIN_URL = "https://mp.weixin.qq.com/cgi-bin/login?lang=zh_CN";
 
+	@SuppressWarnings("resource")
 	public static void main(String[]args) throws Exception{
 		HttpClient httpclient = new DefaultHttpClient(); 
 		String resultCont="";  

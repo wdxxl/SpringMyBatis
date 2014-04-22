@@ -12,8 +12,7 @@ public class UnitTestExampleTestCase{
 	@Test
 	public void test(){
 		Assert.assertEquals(1, 1);
-		Assert.assertFalse(1!=1);
-		Assert.assertTrue(1==1);
+		Assert.assertFalse(1>1);
 		Assert.assertNotNull(new String());
 		Assert.assertSame("Hello", "Hello");
 	}
