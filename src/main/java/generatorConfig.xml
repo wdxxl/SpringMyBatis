@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+	<classPathEntry location="C:/mysql-connector-java-5.1.29.jar" />
+  
+  <context id="context1">
+  	 
+	<commentGenerator>
+		<!--do not remove auto generated comments-->
+		<property name="suppressAllComments" value="false" />
+	</commentGenerator>
+	
+    <jdbcConnection 
+    	driverClass="com.mysql.jdbc.Driver" 
+    	connectionURL="jdbc:mysql://127.0.0.1:3306/wechat"
+    	userId="root" 
+    	password="63300806" />
+   	
+	<javaModelGenerator targetPackage="com.wdxxl.common.model" targetProject="SpringMyBatis/src/main/java"/>
+    <sqlMapGenerator targetPackage="com.wdxxl.common.xml.mybatis" targetProject="SpringMyBatis/src/main/java" />
+    <javaClientGenerator targetPackage="com.wdxxl.common.mapper" targetProject="SpringMyBatis/src/main/java" type="XMLMAPPER"/>
+ <!--
+ 	<table tableName="test" domainObjectName="Test"> </table>
+  -->
+  <table tableName="authority_user" domainObjectName="AuthorityUser"> </table>
+  <table tableName="authority_role" domainObjectName="AuthorityRole"> </table>
+  <table tableName="authority_resource" domainObjectName="AuthorityResource"> </table>
+  <table tableName="student" domainObjectName="Student"></table>
+  <table tableName="teacher" domainObjectName="Teacher"></table>
+  
+       
+  </context>
+</generatorConfiguration>
